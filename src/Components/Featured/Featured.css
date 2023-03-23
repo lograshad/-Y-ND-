@@ -1,0 +1,32 @@
+.featured-stn {
+    background-color: var(--featured-background-color);
+    position: relative;
+    margin-bottom: 15vh;
+}
+.featured-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 300%;
+    padding: 25vh 21vw;
+    gap: 30vw;
+    color: black;
+}
+.gallery-counter {
+    display: flex;
+    color: var(--text-stroke-color);
+    font-family: var(--secondary-font);
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    gap: .5em;
+    position: absolute;
+    top: 25vh;
+    left: 10vw;
+    z-index: 99;
+}
+.gallery-counter span {
+    content: '';
+    width: 5rem;
+    height: 1px;
+    background-color: var(--text-stroke-color);
+}

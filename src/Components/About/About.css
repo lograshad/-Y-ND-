@@ -1,0 +1,11 @@
+.about-stn {
+    padding: 0 3rem;
+    padding-bottom: 20vh;
+}
+.body {
+    font-size: 5vw;
+    font-family: var(--secondary-font);
+    text-align: center;
+    line-height: 1em;
+    font-weight: 500;
+}

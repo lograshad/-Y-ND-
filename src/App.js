@@ -1,23 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import About from './Components/About/About';
+import Contact from './Components/Contact/Contact';
+import Cursor from './Components/Cursor/Cursor';
+import Featured from './Components/Featured/Featured';
+import Footer from './Components/Footer/Footer';
+import Header from './Components/Header/Header';
+import Nav from './Components/Nav/Nav';
+import Scroll from './Components/Scroll/Scroll';
+import Title from './Components/Title/Title';
+import { useState } from 'react';
 
 function App() {
+  const [Link, setLink] = useState(false);
+  const updateLink = () => {
+    setLink(true);
+  }
+  const updateLeave = () => {
+    setLink(false);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Cursor
+        Link={Link}
+      />
+      <Header 
+        Link={Link}
+        updateLink={updateLink}
+        updateLeave={updateLeave}
+      />
+      <Nav/>
+      <Title/>
+      <Scroll/>
+      <About/>
+      <Featured/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }

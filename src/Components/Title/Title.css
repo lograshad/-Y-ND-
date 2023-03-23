@@ -1,0 +1,22 @@
+.title-stn {
+    font-size: 10vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: var(--title-font-color);
+    margin-top: 15vh;
+    font-weight: 700;
+    font-family: var(--secondary-font);
+}
+.line-1 {
+    display: flex;
+    align-items: center;
+}
+.line-1 div:nth-child(2) {
+    content: '';
+    background-color: var(--title-font-color);
+    width: 10rem;
+    height: 1.5vw;
+    margin: 0 1rem;
+}
