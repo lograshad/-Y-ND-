@@ -3,7 +3,7 @@ import gif from '../../Images/batman.gif'
 
 const Contact = () => {
     return ( 
-        <div className="contact-stn">
+        <div className="contact-stn" data-scroll-section>
             <div className="hello">hello!</div>
             <div className="body">
                 <div>contact</div>

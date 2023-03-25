@@ -2,7 +2,7 @@ import './Title.css';
 
 const Title = () => {
     return ( 
-        <div className="title-stn">
+        <div className="title-stn" data-scroll-section>
             <div className="line-1">
                 <div>front</div>
                 <div></div>

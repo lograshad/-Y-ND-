@@ -29,7 +29,7 @@ const Images = [
 const Featured = () => {
     const [ActiveImage, setActiveImage] = useState(1)
     return ( 
-        <div className="featured-stn">
+        <div className="featured-stn" data-scroll-section>
             <div className="featured-wrapper">
                 <div className="gallery-counter">
                     <div>{ActiveImage}</div>

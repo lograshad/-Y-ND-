@@ -3,10 +3,13 @@
     font-weight: 600;
     letter-spacing: 2px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 45vh;
     padding-top: 45vh;
+}
+.scroll-stn #scroll {
     transform: rotateZ(90deg);
 }
 .scroll-indicator {
@@ -14,8 +17,8 @@
     width: .05em;
     height: 6rem;
     background-color: var(--title-font-color);
-    transform: rotateZ(90deg);
-    margin-left: 5rem;
+    /* transform: rotateZ(90deg); */
+    margin-top: 3rem;
     position: relative;
     overflow: hidden;
 }
