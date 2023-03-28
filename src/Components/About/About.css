@@ -1,6 +1,7 @@
 .about-stn {
     padding: 0 3rem;
     padding-bottom: 20vh;
+    opacity: 0;
 }
 .body {
     font-size: 5vw;
@@ -8,4 +9,9 @@
     text-align: center;
     line-height: 1em;
     font-weight: 500;
+    opacity: 0;
+    transform: translate(0);
+}
+.about-stn .is-reveal {
+    opacity: 1;
 }

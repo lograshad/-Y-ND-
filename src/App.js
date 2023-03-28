@@ -3,7 +3,6 @@ import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import Cursor from './Components/Cursor/Cursor';
 import Featured from './Components/Featured/Featured';
-import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Nav from './Components/Nav/Nav';
 import Scroll from './Components/Scroll/Scroll';
@@ -40,7 +39,7 @@ function App() {
       containerRef={containerRef}
     >
       <main data-scroll-container ref={containerRef}>
-        <div className="App">
+        <div className="App" id='main-container'>
           <Cursor
             Link={Link}
           />
@@ -55,7 +54,6 @@ function App() {
           <About />
           <Featured />
           <Contact />
-          <Footer />
         </div>
       </main>
     </LocomotiveScrollProvider>
